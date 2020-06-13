@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <p id="demo"></p>
+ <p id="demo1"></p>
+
+ <p id="demo2"></p>
+ <p id="demo3"></p>
+ <script>
+ var str=2;
+ var txt="";
+ while(str !=Infinity){  //InInfinity 
+  str=str*str;
+  txt= txt +str +"<br>";
+ }
+ document.getElementById("demo").innerHTML=txt;
+ 
+ </script>   
+<script>
+var Num=56;
+Num.
+document.getElementById("demo1").innerHTML="56 ="+"<br>" +
+"十进制D： "+Num.toString(10)+"<br>" +
+"十六进制H： "+Num.toString(16)+"<br>" +
+"八进制O： "+Num.toString(8)+"<br>" +
+"二进制B： "+Num.toString(2);
+</script>
+
+<script>
+var x=new Date("2020-05-06");
+
+document.getElementById("demo2").innerHTML=Number(x);
+</script>
+</body>
+</html>

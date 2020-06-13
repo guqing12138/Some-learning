@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+        <p>为每个元素调用一次函数。</p>
+        <p id="demo"></p>
+        <p>每个数值乘以2</p>
+        <p id="demo1"></p>
+        
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+        
+        <script>
+        var txt = "";
+        var numbers = [45, 4, 9, 16, 25];
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+        
+        function myFunction(value) {
+          txt = txt + value + " "; 
+        }
+    </script>
+
+
+<script>
+var number=[7,8,9,510,58];
+var doublenum=number.map(myfunction);
+document.getElementById("demo1").innerHTML = doublenum;
+function myfunction(value,index,arr){
+return value*2;
+}
+</script>    
+
+<script>
+        var number=[7,8,9,510,58,5,85,5];
+        var x=number.indexOf(5);
+        var doublenum=number.filter(myfunction);
+        document.getElementById("demo2").innerHTML = doublenum[0];
+        document.getElementById("demo3").innerHTML = x+1;
+        function myfunction(value){
+        return value>25;
+        }
+        </script>    
+        
+</body>
+
+</html>

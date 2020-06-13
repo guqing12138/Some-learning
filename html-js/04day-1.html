@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     
+ <p id="demo"></p>
+<p id="转义"></p>
+
+ <script>
+var x=Myfuc(5,6);
+document.getElementById("demo").innerHTML=x;
+
+ function Myfuc(a,b){
+    return a*b;
+ }
+ 
+ </script>
+
+ <script>
+ var person={
+ id:65,
+ fistname:"BXYY",
+ finalname:"bxyy",
+ fullname:function(){
+ return this.fistname+""+this.finalname;
+ } 
+ };
+ document.getElementById("demo").innerHTML=person["fistname"]+""+person["fistname"];
+ 
+ var  c="中国是瓷器的故乡，因此china与\"China\"同名.";
+document.getElementById("转义").innerHTML=c;
+
+ 
+ </script>
+       
+
+ 
+
+    
+</body>
+</html>

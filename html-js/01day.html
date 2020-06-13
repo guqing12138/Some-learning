@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<style>
+body{
+    color: blueviolet;
+
+}
+button{
+ color: blueviolet;
+ border-radius: 8px;	
+}
+</style>
+
+</head>
+<body>
+		<script>
+				function displayDate(){
+				 document.getElementById("demo").innerHTML=Date();
+				 
+				 /* x=document.getElementById("demo");
+				    x.innerHTML=Date();   也可  */
+				}
+					document.write("<h1> 标题1</h1>");
+				document.write("<p>段落</p>");
+
+				function mas(){
+                 document.write("调用函数，文档被重写");
+				}
+
+
+
+
+		</script>	
+
+<h1>My js program</h1>
+<p id="demo">Olse</p>
+<button type="button" onclick="displayDate()">显示日期</button><br>
+
+<button type="button" onclick="alert('欢迎！')">flash</button><br>  <!--对事件的反应-->
+
+
+
+<button type="button" onclick="mas()"> 点击</button><br>
+</body>
+</html>

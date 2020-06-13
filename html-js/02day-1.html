@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+  <script>
+    function   myfunc(){      //html页面嵌入JS
+        document.getElementById("demo").innerHTML="无畏"; 
+    }
+    function myfunc1(){
+      // var x=document.getElementById("demo").value;
+      window.alert("你好");
+    }
+
+
+
+</script>
+
+</head>
+
+
+<body>
+ <!--  链接外部JS，外部JS只有JS代码，不用script标签 <script src="/home/ghost/Desktop/ui/js/myjs.js"></script> -->
+
+<h1>无他</h1>
+<p id="demo"> 按钮</p>
+<button type="button" onclick="myfunc()">按</button> <p>
+<button type="button" onclick="myfunc1()">按1</button> 
+
+<script>
+a=5;
+b=6;
+c=a+b;
+console.log(c);
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p>请把下面的段落中的“Microsoft”替换为“W3School”：</p>
+<button onclick="myfunc()">TYR</button>
+<p id="demo2">请访问 Microsoft！</p>
+<p id="demo3"></p>
+
+
+<script>
+var x=0.2+0.1;
+document.getElementById("demo3").innerHTML=x;
+</script>
+
+<script>
+var str="It\'s difficult to exchange my life!"
+var pos=str.indexOf("difficult");
+var itfor=str.length;
+var Cchar=pos*itfor;
+document.getElementById("demo").innerHTML =Cchar;
+</script>
+
+<script>
+var str="Apple,Bananna,Mango";
+var res=str.slice(4);
+document.getElementById("demo1").innerHTML= res;
+
+</script>
+<script>
+function myfunc(){
+ var str=document.getElementById("demo2").innerHTML;
+var text=str.replace(/Microsoft/i,"W3School");
+document.getElementById("demo2").innerHTML=text;
+}    
+
+</script>
+
+
+    
+</body>
+</html> 

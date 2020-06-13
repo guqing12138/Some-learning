@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+button{
+color: aqua;
+}
+#demo{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color: blue;
+
+}
+</style>
+
+<div><p id="demo"></p>
+   <button onclick="func()">push</button>
+</div><br>
+
+<div></div><p id="demo1"></p></div>
+
+<div> <p id="demo2"></p>
+<button onclick="func1()">splice</button>
+</div>
+
+<div>
+<p id="demo3"></p>
+<button onclick="func8()">concat</button>
+</div>
+
+
+<script>
+        var ft1= ["foot","feet"];
+        document.getElementById("demo").innerHTML=ft1.join("&");
+        
+function func(){
+    ft1[ft1.length]="head";
+    //ft.push("head");  //shift 删除第一个元素，同时将元素往低的索引进行位移，返回字符串 。  unshift相反，放回字符串长度
+document.getElementById("demo").innerHTML=ft1;
+}        
+</script>   
+
+<script>
+   var ft2 =["soft","hard"];
+   document.getElementById("demo2").innerHTML=ft2.toString();
+   function func1(){
+    ft2.splice(2,0,"hand","eyes");
+ document.getElementById("demo2").innerHTML=ft2;
+}   
+</script>
+
+<script>
+var ft=["add","sub"];
+document.getElementById("demo1").innerHTML=ft;
+ft[1]= "div";
+document.getElementById("demo1").innerHTML=ft;
+</script>
+
+<script>
+    var ft3="xxx";
+    document.getElementById("demo3").innerHTML=ft3;
+function func8(){
+
+    ft3=ft1.concat(ft2);
+    document.getElementById("demo3").innerHTML=ft3;
+}
+
+</script>
+
+</body>
+</html>

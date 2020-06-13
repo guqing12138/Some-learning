@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=++++++, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>   <div>
+        <p id="demo"></p>
+        <button onclick="myFunction1()">数字排序</button>
+        <button onclick="myFunction2()">字母排序</button>
+        <button onclick="myFunction4()">随机排序</button><br>
+
+        <p id="demo1"></p>
+        <button onclick="myFunction3()">得到第一个数</button>
+        </div><br>
+        <div> 
+            <p id="demo2"></p>
+           <button onclick="myFunction5()">得到最高数</button>
+        </div>
+        
+
+     <script>     
+     function newArr(arr){
+            for(var i=0;i<arr.length;i++){
+                for(var j=i+1;j<arr.length;j++){
+                    if(arr[i]==arr[j]){ 
+                    //如果第一个等于第二个，splice方法删除第二个
+                    arr.splice(j,1);
+                    j--;
+                    }
+                }
+            }
+            return arr;
+       }     
+        var arr = [1,1,2,5,6,3,5,,9,5,6,8,9,8,25];
+        console.log(newArr(arr))
+        </script>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+
+
+function myFunction1() {
+ points.sort(function(a, b){return b - a});   //逆序
+  //var xr=xs.reverse();
+  document.getElementById("demo").innerHTML = points;
+}
+function  myFunction2(){
+  points.sort();    //按字母排序
+document.getElementById("demo").innerHTML =points;      
+}
+function myFunction3(){
+   points.sort(function(a, b){return 0.5 -Math.random()}); 
+  document.getElementById("demo").innerHTML= points[0];  //随机排序
+ // document.getElementById("demo").innerHTML=points;
+}
+
+function myFunction4(){
+   points.sort(function(a, b){return 0.5 -Math.random()}); 
+  document.getElementById("demo").innerHTML= points;  //随机排序
+ // document.getElementById("demo").innerHTML=points;
+}
+
+</script>
+
+
+<script>
+
+var points = [40, 100, 1, 5, 25, 10];
+    
+    function myFunction5(arr){
+var len =arr.length;
+var max =-Infinity;
+while(len--){
+if(arr[len]>max){
+  max=arr[len];
+}
+
+}
+return max;
+}
+
+document.getElementById("demo2").innerHTML=myFunction5(points);
+</script>
+
+
+
+
+</body>
+
+</html> 
